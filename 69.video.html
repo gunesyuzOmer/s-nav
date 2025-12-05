@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 100px 100px; /* 3 sütun 100px boyutunda */
+            grid-template-rows: 50px 50px;
+        }
+
+        .container div:nth-child(1){
+            background-color: aqua;
+        }
+
+         .container div:nth-child(2){
+            background-color: blueviolet;
+        }
+
+         .container div:nth-child(3){
+            background-color: brown;
+        }
+
+         .container div:nth-child(4){
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+</html>

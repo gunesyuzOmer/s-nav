@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        gap: 10px;
+        height: 100vh;
+      }
+      
+      .box{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        margin: 5px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 100px;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="order: 2; flex-grow: 1">A</div>
+        <div class="box" style="order: 3; flex-shrink: 2">B</div>
+        <div class="box" style="order: 1; flex-shrink: 3; align-self: flex-end">C</div>
+</body>
+</html>

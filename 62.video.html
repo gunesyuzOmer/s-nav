@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu{
+            width: 300px;
+            height: 150px;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 2px solid #333;
+            margin-bottom: 40px;
+        }
+        .kutu-baslık{
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        .ornek{
+            width: 100px;
+            height: 30px;
+            color: white;
+            text-align: center;
+            background-color: aqua;
+            line-height: 30px;
+            border-radius: 4px;
+        }
+        .static{
+            position: static;
+            background-color: #555;
+        }
+        .relative{
+            position: relative;
+            background-color: tomato;
+            top: 10px;
+            left: 50px;
+        }
+        .absolute{
+            background-color: #f97316;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>position örneği</h2>
+    <div class="kutu">
+     <div class="kutu-baslık">static</div>
+     <p>yerinde durur,oynatılmaz</p>
+     <div class="ornek static"> static </div>
+    </div>   
+
+
+    <div class="kutu">
+        <div class="kutu-baslık">relative</div>
+        <p>kendi konumuna göre hareket eder, yer tutar</p>
+        <div class="ornek relative"> relative </div>
+       </div> 
+
+
+       <div class="kutu">
+        <div class="kutu-baslık">absolute</div>
+        <p>üsteki relative kutuya göre konumlanır</p>
+        <div class="ornek relative"> relative </div>
+       </div> 
+
+    
+</body>
+</html>

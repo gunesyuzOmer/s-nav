@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: blue;
+        }
+
+        p:hover{
+            background-color: red;
+        }
+
+        .box{
+            background-color: yellowgreen;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: kutuyuKaydır 2s ease-in-out infinite;
+        }
+
+        @keyframes kutuyuKaydır {
+            0% {
+                left: 0;
+            }
+            100%{
+                left: 200px;
+                top: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptas saepe et assumenda hic repudiandae!</p>
+    <div class="box"></div>
+</body>
+</html>
